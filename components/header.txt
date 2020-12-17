@@ -1,0 +1,86 @@
+import React from 'react'; 
+import {Text,StyleSheet,View} from "react-native"; 
+import {createAppContainer} from 'react-navigation';
+import {createMaterialBottomNavigator, createMaterialBottomTabNavigator} from 'react-navigation-material-bottom-tabs'; 
+import Wall from './screens/Wall';
+import Icon from 'react-native-vector-icons/FontAwesome';
+
+class HomeScreen extends React.Component { 
+  render(){
+    return(
+      <View>
+        <Text>
+          NIbba
+        </Text>
+      </View>
+    )
+  }
+}
+
+
+class Profile extends React.Component { 
+    render(){
+      return(
+        <View>
+          <Text>
+            Henlo
+          </Text>
+        </View>
+      )
+    }
+
+}
+
+
+
+const styles = StyleSheet.create({ 
+container:{
+  flex:1,
+  justifyContent:"center",
+  alignItems:'center',
+
+}
+
+})
+
+
+
+
+const TabNavigator = createMaterialBottomTabNavigator(
+ { 
+
+  Wall:{
+    screen:Wall,
+    navigationOptions:{
+      tabBarIcon: <Icon name="newspaper-o" size={30} color="#900" />,
+     },
+  },
+
+  
+   
+  Home:{
+       screen:HomeScreen,
+       navigationOptions:{
+        tabBarIcon: <Icon name="home" size={30} color="#900" />,
+       },
+ },
+ 
+
+
+
+
+ },
+
+ {
+  initialRouteName: 'Wall',
+  activeColor: '#f0edf6',
+  inactiveColor: '#3e2465',
+  barStyle: { backgroundColor: '#694fad' },
+  tabBarOptions: { showLabel: false },
+   labeled:false,
+}
+
+
+);
+ 
+export default createAppContainer(TabNavigator); 

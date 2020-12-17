@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "577990033199",
+    "firebase_url": "https://meme-gallery-f2090.firebaseio.com",
+    "project_id": "meme-gallery-f2090",
+    "storage_bucket": "meme-gallery-f2090.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577990033199:android:444e6a730909b5168aebda",
+        "android_client_info": {
+          "package_name": "com.meme_gallery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577990033199-bjdk09o871lainak74anlqc7mmfctk4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjVomwlVhBIgvGx7AcovLI24Uqfo2RX2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577990033199-bjdk09o871lainak74anlqc7mmfctk4e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
